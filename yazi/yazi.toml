@@ -1,0 +1,11 @@
+# ~/.config/yazi/yazi.toml
+[opener]
+wine = [
+  { run = 'wine "$@"', orphan = true, for = "unix", desc = "Wine" }
+]
+
+[open]
+prepend_rules = [
+  { name = "*.exe", use = "wine" },
+  { name = "*.msi", use = "wine" },  # optional
+]
