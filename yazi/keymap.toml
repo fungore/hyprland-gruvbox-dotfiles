@@ -1,0 +1,5 @@
+# ~/.config/yazi/keymap.toml
+[[mgr.prepend_keymap]]
+on = "w"
+run = "shell 'wine \"$@\"' --orphan"
+desc = "Open selected/hovered files with Wine"
